@@ -3,6 +3,16 @@ const productInput = document.getElementById('product-input')
 const productCont = document.getElementById('product-container')
 const searchBtn = document.getElementById('search-btn')
 
+/* Enter Function */
+const enter = event => {
+    if (event.key === 'Enter') {
+        searchBtn.click()
+    }
+}
+
+/* Set Enter Key */
+productInput.addEventListener('keyup', enter)
+
 /* ============== Add Product Button ============== */
 const addProduct = () => {
     const product = productInput.value 
