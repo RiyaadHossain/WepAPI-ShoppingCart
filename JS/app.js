@@ -8,6 +8,7 @@ const enter = event => {
     if (event.key === 'Enter') {
         searchBtn.click()
     }
+
 }
 
 /* Set Enter Key */
@@ -37,7 +38,7 @@ const showProduct = product => {
 
 /* Function to Store in Local Storage */
 const addInStorage = product => {
-    // Get the cartCont
+    // Get the cart
     const cart = getCart()
     if (cart[product]) {
         cart[product] = cart[product] + 1
